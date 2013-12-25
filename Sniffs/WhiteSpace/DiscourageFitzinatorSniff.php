@@ -69,10 +69,10 @@ class Symfony2_Sniffs_WhiteSpace_DiscourageFitzinatorSniff implements PHP_CodeSn
             return;
         }
 
-        if (strpos($tokens[$stackPtr]['content'], "\n") > 0 || strpos($tokens[$stackPtr]['content'], "\r") > 0) {
+        /*if (strpos($tokens[$stackPtr]['content'], "\n") > 0 || strpos($tokens[$stackPtr]['content'], "\r") > 0) {
             $warning = 'Please trim any trailing whitespace';
             $phpcsFile->addWarning($warning, $stackPtr);
-        }
+        }*/
 
     }
 
